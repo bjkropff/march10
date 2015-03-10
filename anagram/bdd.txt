@@ -1,0 +1,40 @@
+The first thing the user inputs a check against b.
+
+then we will check a against a and the output would be true.
+
+now we will enter two letter words like "a compared to b c and a",
+will return only the match with a
+
+next we will input small words like "do against lo fa so ti re mi do"
+
+finally "beard against row mow starving lead bread"
+
+
+
+test: input: Check "cat"  with "red, bat mat act"
+      output: "act"
+
+      1. return all values to lowercase
+
+
+Test :
+        input: "is"
+        output: "si"
+
+    1. Seperate the characters into an array,
+    2. and shuffle them,
+    3.and return the output.
+
+
+
+Test :
+        input:"The"
+        output: "the, het, hte, teh, eth, eht"
+
+    2. print all the variations of the word
+
+Test:
+        input :"Act"
+        return "cat, tac"
+
+    1. print actual words.
