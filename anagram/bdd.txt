@@ -2,7 +2,7 @@ The first thing the user inputs a check against b.
 
 then we will check a against a and the output would be true.
 
-now we will enter two letter words like "a compared to b c and a",
+now we will enter git commit   like "a compared to b c and a",
 will return only the match with a
 
 next we will input small words like "do against lo fa so ti re mi do"

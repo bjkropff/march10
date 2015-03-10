@@ -20,5 +20,20 @@
 
 
             }
+            function test_anagramFind()
+            {
+                //Arrange
+                $testAnagram = new Anagram;
+                 $input1 = "a";
+                 $input2 = "a b c d";
+
+                 //Act
+                 $result = $testAnagram->anagramFind($input1, $input2);
+
+                 //Assert
+                 $this->assertEquals("the same!", $result);
+
+
+            }
         }
 ?>
