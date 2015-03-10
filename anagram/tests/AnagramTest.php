@@ -5,35 +5,51 @@
 
         class AnagramTest extends PHPUnit_Framework_TestCase
         {
-            function test_anagramMatch()
+            // function test_anagramMatch()
+            // {
+            //     //Arrange
+            //     $testAnagram = new Anagram;
+            //      $input1 = "bad";
+            //      $input2 = "bad";
+            //
+            //      //Act
+            //      $result = $testAnagram->anagramMatch($input1, $input2);
+            //
+            //      //Assert
+            //      $this->assertEquals("the same!", $result);
+            //
+            //
+            // }
+            //
+            // function test_anagramFind()
+            // {
+            //     //Arrange
+            //     $testAnagram = new Anagram;
+            //      $input1 = "bad";
+            //      $input2 = "a b c d";
+            //
+            //      //Act
+            //      $result = $testAnagram->anagramFind($input1, $input2);
+            //
+            //      //Assert
+            //      $this->assertEquals("the same!", $result);
+            //
+            //
+            // }
+
+            function test_anagramMake()
             {
-                //Arrange
+                //arrange
                 $testAnagram = new Anagram;
-                 $input1 = "a";
-                 $input2 = "a";
-
-                 //Act
-                 $result = $testAnagram->anagramMatch($input1, $input2);
-
-                 //Assert
-                 $this->assertEquals("the same!", $result);
+                $input1 = "add";
+                $input2= "cow";
 
 
-            }
-            function test_anagramFind()
-            {
-                //Arrange
-                $testAnagram = new Anagram;
-                 $input1 = "a";
-                 $input2 = "a b c d";
+                //act
+                $result = $testAnagram->anagramMake($input1, $input2);
 
-                 //Act
-                 $result = $testAnagram->anagramFind($input1, $input2);
-
-                 //Assert
-                 $this->assertEquals("the same!", $result);
-
-
+                //assert
+                $this->assertEquals($input1, $result);
             }
         }
 ?>

@@ -35,7 +35,23 @@
 
                 }
 
+                function anagramMake($input1, $input2)
+                {
 
+                $word1 = str_split($input1);
+                $word2 = str_split($input2);
+                sort($word1);
+                sort($word2);
+
+                if ($word1 == $word2) {
+                    return ($input1);
+                    }
+                    elseif ($word1 != $word2){
+                        return ("");
+
+                }
+                }
             }
+
 
 ?>
