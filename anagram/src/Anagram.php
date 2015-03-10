@@ -3,12 +3,17 @@
             class Anagram
             {
 
-                function anagramMatch($word1, $word2);
+                function anagramMatch($input1, $input2)
                 {
-                  $word1
-                  $word2
 
-                  if ($word1 != $word2) {
-                      return ("Not the same!");
+
+                  if ($input1 == $input2) {
+                      return ("the same!");
+                      }
+                      elseif ($input1 != $input2){
+                          return ("");
+
+                      }
                   }
             }
+?>

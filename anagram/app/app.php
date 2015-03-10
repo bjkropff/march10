@@ -3,8 +3,9 @@
             require_once __DIR__."/../src/Anagram.php";
 
             $app = new Silex\Application();
+            $app['debug']=true;
 
-            $app->register(new Silex\Provider\TwigServiceProvider(),
+            $app->register(new Silex\Provider\TwigServiceProvider(), array(
                 'twig.path' => __DIR__.'/../views'
 
             ));
@@ -15,7 +16,7 @@
                 return $app['twig']->render('form.twig');
             });
 
-            
+
 
 
 
