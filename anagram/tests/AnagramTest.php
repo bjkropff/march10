@@ -26,7 +26,7 @@
             //     //Arrange
             //     $testAnagram = new Anagram;
             //      $input1 = "bad";
-            //      $input2 = "a b c d";
+            //      $input2 = "bad";
             //
             //      //Act
             //      $result = $testAnagram->anagramFind($input1, $input2);
@@ -36,20 +36,34 @@
             //
             //
             // }
+            //
+            // function test_anagramMake()
+            // {
+            //     //arrange
+            //     $testAnagram = new Anagram;
+            //     $input1 = "add";
+            //     $input2= "add";
+            //
+            //
+            //     //act
+            //     $result = $testAnagram->anagramMake($input1, $input2);
+            //
+            //     //assert
+            //     $this->assertEquals($input1, $result);
+            // }
 
-            function test_anagramMake()
+            function test_anagramEr()
             {
                 //arrange
                 $testAnagram = new Anagram;
                 $input1 = "add";
-                $input2= "cow";
-
+                $input2= array("add", "dad", "add", "todd");
 
                 //act
-                $result = $testAnagram->anagramMake($input1, $input2);
+                $result = $testAnagram->anagramEr($input1, $input2);
 
                 //assert
-                $this->assertEquals($input1, $result);
+                $this->assertEquals("split", $result);
             }
         }
 ?>
